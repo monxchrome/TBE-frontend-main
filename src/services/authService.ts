@@ -24,7 +24,7 @@ export const authService = {
 		});
 
 		if (!response.ok) {
-			throw new Error('Ошибка обновления токена');
+			throw new Error('Refresh token error');
 		}
 
 		const result = await response.json();
